@@ -1,0 +1,26 @@
+.main-form {
+    display: flex;
+    flex-direction: column;
+    user-select: none;
+}
+
+
+.btn-submit {
+    background-color: unset;
+    border: unset;
+    font-size: 5.5rem;
+    transition: filter 0.5s ease-in-out, transform 0.2s ease-in-out;
+    animation: ballShadow 0.5s ease-in-out alternate infinite both;
+}
+
+
+.btn-submit:disabled {
+    animation: none;
+    filter: grayscale(0.5);
+}
+
+@keyframes ballShadow {
+    to {
+        filter: hue-rotate(-45deg);
+    }
+}
