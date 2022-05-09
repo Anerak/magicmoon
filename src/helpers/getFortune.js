@@ -24,7 +24,7 @@ export const getFortune = async (sign, gender) => {
 	url.searchParams.set('day', day);
 
 	const req = await fetch(url, { method: 'POST', mode: 'cors' });
-	const { data } = await req.json();
+	const fortune = await req.json();
 
-	return data;
+	return fortune;
 };

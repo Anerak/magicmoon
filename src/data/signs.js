@@ -5,7 +5,7 @@ const Signs = [
 		startMonth: 3,
 		endDay: 20,
 		endMonth: 4,
-		symbol: '&#9800;',
+		symbol: '9800',
 	},
 	{
 		name: 'Taurus',
@@ -13,7 +13,7 @@ const Signs = [
 		startMonth: 4,
 		endDay: 20,
 		endMonth: 5,
-		symbol: '&#9801;',
+		symbol: '9801',
 	},
 	{
 		name: 'Gemini',
@@ -21,7 +21,7 @@ const Signs = [
 		startMonth: 5,
 		endDay: 21,
 		endMonth: 6,
-		symbol: '&#9802;',
+		symbol: '9802',
 	},
 	{
 		name: 'Cancer',
@@ -29,7 +29,7 @@ const Signs = [
 		startMonth: 6,
 		endDay: 22,
 		endMonth: 7,
-		symbol: '&#9803;',
+		symbol: '9803',
 	},
 	{
 		name: 'Leo',
@@ -37,7 +37,7 @@ const Signs = [
 		startMonth: 7,
 		endDay: 22,
 		endMonth: 8,
-		symbol: '&#9804;',
+		symbol: '9804',
 	},
 	{
 		name: 'Virgo',
@@ -45,7 +45,7 @@ const Signs = [
 		startMonth: 8,
 		endDay: 22,
 		endMonth: 9,
-		symbol: '&#9805;',
+		symbol: '9805',
 	},
 	{
 		name: 'Libra',
@@ -53,7 +53,7 @@ const Signs = [
 		startMonth: 9,
 		endDay: 22,
 		endMonth: 10,
-		symbol: '&#9806;',
+		symbol: '9806',
 	},
 	{
 		name: 'Scorpio',
@@ -61,7 +61,7 @@ const Signs = [
 		startMonth: 10,
 		endDay: 22,
 		endMonth: 11,
-		symbol: '&#9807;',
+		symbol: '9807',
 	},
 	{
 		name: 'Sagittarius',
@@ -69,7 +69,7 @@ const Signs = [
 		startMonth: 11,
 		endDay: 21,
 		endMonth: 12,
-		symbol: '&#9808;',
+		symbol: '9808',
 	},
 	{
 		name: 'Capricorn',
@@ -77,7 +77,7 @@ const Signs = [
 		startMonth: 12,
 		endDay: 19,
 		endMonth: 1,
-		symbol: '&#9809;',
+		symbol: '9809',
 	},
 	{
 		name: 'Aquarius',
@@ -85,7 +85,7 @@ const Signs = [
 		startMonth: 1,
 		endDay: 18,
 		endMonth: 2,
-		symbol: '&#9810;',
+		symbol: '9810',
 	},
 	{
 		name: 'Pisces',
@@ -93,7 +93,7 @@ const Signs = [
 		startMonth: 2,
 		endDay: 20,
 		endMonth: 3,
-		symbol: '&#9811;',
+		symbol: '9811',
 	},
 ];
 

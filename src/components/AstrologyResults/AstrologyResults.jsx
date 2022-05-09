@@ -1,13 +1,22 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { useFortune } from '../../hooks/useFetch';
+import SignInformation from './components/Sign/SignInformation';
+import TarotInformation from './components/Tarot/TarotInformation';
 
 const AstrologyResults = ({ dateOfBirth, gender }) => {
-	const { data, sign, loading } = useFortune(dateOfBirth, gender);
+	const { fortune, sign, cards, loading } = useFortune(dateOfBirth, gender);
 
 	return (
 		<>
-			<div className="row">{!loading && data}</div>
+			{!loading && (
+				<>
+					<div className="row">
+						<SignInformation fortune={fortune} sign={sign} />
+					</div>
+					<TarotInformation cards={cards} />
+				</>
+			)}
 		</>
 	);
 };

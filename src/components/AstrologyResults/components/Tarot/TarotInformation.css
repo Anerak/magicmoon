@@ -1,0 +1,29 @@
+.row.submit {
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+
+button.taroteye {
+    background-color: unset;
+    border: unset;
+    font-size: 8rem;
+    margin: 10px;
+    transition: filter 0.5s ease-in-out, transform 0.2s ease-in-out;
+    animation: tarotScale 0.5s ease-in-out alternate infinite both;
+}
+
+button.taroteye:hover, button.taroteye:disabled
+button.taroteye:active, button.taroteye:focus,
+.button[disabled].taroteye:hover, .button[disabled].taroteye
+{
+    background-color: unset;
+    border: unset;
+}
+
+@keyframes tarotScale {
+    to {
+        transform: scale(110%);
+    }
+}

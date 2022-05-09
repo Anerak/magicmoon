@@ -5,8 +5,6 @@ const getSign = (dateOfBirth) => {
 	let day = dob.getDate();
 	let month = dob.getMonth() + 1;
 
-	console.log(dob, day, month);
-
 	let sign = Signs.filter(
 		(sign) =>
 			(day >= sign.startDay && month === sign.startMonth) ||

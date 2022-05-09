@@ -1,0 +1,9 @@
+.TarotCard {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+img.flipped {
+    transform: rotate(180deg);
+}

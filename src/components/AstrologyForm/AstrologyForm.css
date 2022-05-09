@@ -1,4 +1,34 @@
-.main-form {
+.row.submit {
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+
+button.magicball {
+    background-color: unset;
+    border: unset;
+    font-size: 8rem;
+    margin: 10px;
+    transition: filter 0.5s ease-in-out, transform 0.2s ease-in-out;
+    animation: ballHue 0.5s ease-in-out alternate infinite both;
+}
+
+button.magicball:hover, button.magicball:disabled
+button.magicball:active, button.magicball:focus,
+.button[disabled].magicball:hover, .button[disabled].magicball
+{
+    background-color: unset;
+    border: unset;
+    animation: none;
+}
+
+@keyframes ballHue {
+    to {
+        filter: hue-rotate(-45deg);
+    }
+}
+/*.main-form {
     display: flex;
     flex-direction: column;
     user-select: none;
@@ -9,8 +39,7 @@
     background-color: unset;
     border: unset;
     font-size: 5.5rem;
-    transition: filter 0.5s ease-in-out, transform 0.2s ease-in-out;
-    animation: ballShadow 0.5s ease-in-out alternate infinite both;
+    
 }
 
 
@@ -18,9 +47,4 @@
     animation: none;
     filter: grayscale(0.5);
 }
-
-@keyframes ballShadow {
-    to {
-        filter: hue-rotate(-45deg);
-    }
-}
+*/

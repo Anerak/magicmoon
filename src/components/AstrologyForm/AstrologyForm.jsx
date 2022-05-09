@@ -24,70 +24,66 @@ const AstrologyForm = ({ setUserData }) => {
 	};
 
 	return (
-		<form className="main-form" onSubmit={handleSubmit}>
-			<div className="row">
-				<label htmlFor="name">Name:</label>
-				<input
-					type="text"
-					name="name"
-					id="name"
-					onChange={handleChange}
-					value={formState.name}
-				/>
+		<div className="row">
+			<div className="column column-50 column-offset-25">
+				<form onSubmit={handleSubmit}>
+					<fieldset>
+						<label htmlFor="name">Name</label>
+						<input
+							type="text"
+							name="name"
+							id="name"
+							onChange={handleChange}
+							value={formState.name}
+						/>
+						<label htmlFor="age">Age:</label>
+						<input
+							type="number"
+							name="age"
+							id="age"
+							min="0"
+							onChange={handleChange}
+							value={formState.age}
+						/>
+						<label htmlFor="gender">Gender: </label>
+						<select
+							name="gender"
+							id="gender"
+							onChange={handleChange}
+							value={formState.gender}>
+							<option disabled value="">
+								Gender
+							</option>
+							<option value="M">Male</option>
+							<option value="F">Female</option>
+							<option value="B">Binary</option>
+						</select>
+						<label htmlFor="dateOfBirth">Date of Birth:</label>
+						<input
+							type="date"
+							name="dateOfBirth"
+							id="dateOfBirth"
+							onChange={handleChange}
+						/>
+						<div className="row submit">
+							<button
+								className="button magicball"
+								type="submit"
+								disabled={
+									!(
+										formState.age !== '' &&
+										formState.dateOfBirth !== '' &&
+										formState.gender !== '' &&
+										formState.name !== ''
+									)
+								}>
+								🔮
+							</button>
+						</div>
+					</fieldset>
+				</form>
 			</div>
-
-			<div className="row">
-				<label htmlFor="age">Age:</label>
-				<input
-					type="number"
-					name="age"
-					id="age"
-					min="0"
-					onChange={handleChange}
-					value={formState.age}
-				/>
-			</div>
-
-			<div className="row">
-				<label htmlFor="gender">Gender: </label>
-				<select
-					name="gender"
-					id="gender"
-					onChange={handleChange}
-					value={formState.gender}>
-					<option disabled value="">
-						Gender
-					</option>
-					<option value="M">Male</option>
-					<option value="F">Female</option>
-					<option value="B">Binary</option>
-				</select>
-			</div>
-			<div className="row">
-				<label htmlFor="dateOfBirth">Date of Birth:</label>
-				<input
-					type="date"
-					name="dateOfBirth"
-					id="dateOfBirth"
-					onChange={handleChange}
-				/>
-			</div>
-			<div className="row justify-centered">
-				<button
-					className="btn-submit"
-					type="submit"
-					disabled={
-						!(
-							formState.age !== '' &&
-							formState.dateOfBirth !== '' &&
-							formState.gender !== '' &&
-							formState.name !== ''
-						)
-					}>
-					🔮
-				</button>
-			</div>
-		</form>
+		</div>
 	);
 };
 
