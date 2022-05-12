@@ -1,4 +1,5 @@
 import React from 'react';
+import htmlEntity from '../../../../helpers/htmlEntity';
 
 const SignInformation = ({ fortune, sign }) => {
 	let {
@@ -12,31 +13,31 @@ const SignInformation = ({ fortune, sign }) => {
 
 	let { name, symbol } = sign;
 
-	const htmlEntity = (x) => String.fromCharCode(x);
-
 	return (
 		<>
-			<div className="column">
-				<h2>
-					{htmlEntity(symbol)} {name} ({dateRange})
-				</h2>
+			<div className="row">
 				<div className="column">
-					<div className="row">
-						<div className="column"></div>
-					</div>
-					<div className="row">
-						<p>{description}</p>
-					</div>
-					<div className="row">
-						<div className="column">
-							<h3>ℹ️ Information</h3>
-							<p>Color: {color} </p>
-							<p>Compatible with {compatible}</p>
+					<h2>
+						{htmlEntity(symbol)} {name} ({dateRange})
+					</h2>
+					<div className="column">
+						<div className="row">
+							<div className="column"></div>
 						</div>
-						<div className="column">
-							<h3>🍀 Luck</h3>
-							<p>Lucky number: {number}</p>
-							<p>Lucky time: {time}</p>
+						<div className="row">
+							<p>{description}</p>
+						</div>
+						<div className="row">
+							<div className="column">
+								<h3>{htmlEntity(8505)} Information</h3>
+								<p>Color: {color} </p>
+								<p>Compatible with {compatible}</p>
+							</div>
+							<div className="column">
+								<h3>{htmlEntity(127808)} Luck</h3>
+								<p>Lucky number: {number}</p>
+								<p>Lucky time: {time}</p>
+							</div>
 						</div>
 					</div>
 				</div>

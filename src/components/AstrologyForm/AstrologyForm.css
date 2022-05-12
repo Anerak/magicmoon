@@ -1,32 +1,42 @@
 .row.submit {
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
+	justify-content: center;
+	align-items: center;
+	padding: 10px;
 }
-
 
 button.magicball {
-    background-color: unset;
-    border: unset;
-    font-size: 8rem;
-    margin: 10px;
-    transition: filter 0.5s ease-in-out, transform 0.2s ease-in-out;
-    animation: ballHue 0.5s ease-in-out alternate infinite both;
+	background-color: unset;
+	border: unset;
+	font-size: 8rem;
+	margin: 10px;
+	transition: filter 0.5s ease-in-out, transform 0.2s ease-in-out;
+	animation: ballHue 0.5s ease-in-out alternate infinite both;
 }
 
-button.magicball:hover, button.magicball:disabled
-button.magicball:active, button.magicball:focus,
-.button[disabled].magicball:hover, .button[disabled].magicball
-{
-    background-color: unset;
-    border: unset;
-    animation: none;
+button.magicball:hover,
+button.magicball:disabled button.magicball:active,
+button.magicball:focus,
+.button[disabled].magicball:hover,
+.button[disabled].magicball {
+	background-color: unset;
+	border: unset;
+	animation: none;
 }
 
 @keyframes ballHue {
-    to {
-        filter: hue-rotate(-45deg);
-    }
+	to {
+		filter: hue-rotate(-45deg);
+	}
+}
+
+option {
+	background-color: #262834;
+}
+
+@media print {
+	.AstrologyForm {
+		display: none;
+	}
 }
 /*.main-form {
     display: flex;

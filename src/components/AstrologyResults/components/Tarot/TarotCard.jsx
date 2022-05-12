@@ -13,7 +13,6 @@ const TarotCard = ({ card }) => {
 
 	useEffect(() => {
 		let f = !!~~(Math.random() * 2);
-		console.log(f);
 		setFlipped(f);
 	}, [card]);
 

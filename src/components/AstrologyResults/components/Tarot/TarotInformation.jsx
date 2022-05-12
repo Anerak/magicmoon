@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 
 import './TarotInformation.css';
 import TarotCard from './TarotCard';
+import htmlEntity from '../../../../helpers/htmlEntity';
 
 const TarotInformation = ({ cards }) => {
 	const [display, setDisplay] = useState(false);
@@ -12,12 +13,17 @@ const TarotInformation = ({ cards }) => {
 		setDisplay(!display);
 	};
 
+	const saveToPDF = (evt) => {
+		evt.preventDefault();
+		window.print();
+	};
+
 	return (
 		<>
 			<div className={'row ' + (!display ? 'submit' : '')}>
 				{!display && (
 					<button className="button taroteye" onClick={toggleDisplay}>
-						👁‍🗨
+						&#x1f441;
 					</button>
 				)}
 				{display &&
@@ -30,6 +36,11 @@ const TarotInformation = ({ cards }) => {
 							}
 						/>
 					))}
+			</div>
+			<div className="row submit">
+				<button className="button save" onClick={saveToPDF}>
+					{htmlEntity(128190)}
+				</button>
 			</div>
 		</>
 	);

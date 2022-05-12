@@ -1,13 +1,15 @@
 :root {
-  background-color: #1c1d26;
-  user-select: none;
+	background-color: #1c1d26;
+	user-select: none;
 }
 body {
-  margin: 0 auto;
-  color: white;
+	margin: 0 auto;
+	color: white;
 }
 
-input, select, option {
-  color: white;
-  color-scheme: dark;
+input,
+select,
+option {
+	color: white;
+	color-scheme: dark;
 }

@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 
 import './AstrologyForm.css';
+import htmlEntity from '../../helpers/htmlEntity';
 
 const AstrologyForm = ({ setUserData }) => {
 	const [formState, setFormState] = useState({
@@ -24,7 +25,7 @@ const AstrologyForm = ({ setUserData }) => {
 	};
 
 	return (
-		<div className="row">
+		<div className="row AstrologyForm">
 			<div className="column column-50 column-offset-25">
 				<form onSubmit={handleSubmit}>
 					<fieldset>
@@ -77,7 +78,7 @@ const AstrologyForm = ({ setUserData }) => {
 										formState.name !== ''
 									)
 								}>
-								🔮
+								{htmlEntity(128302)}
 							</button>
 						</div>
 					</fieldset>
